@@ -13,5 +13,5 @@ int main() {
 
     double totalCost = m1 * 45.5 + m2 * 17.40 + m3 * 31.5;
 
-    cout << fixed << setprecision(2) << "Ñóìà ïðèäáàíü = " << totalCost << " ãðí" << endl;
+    cout << fixed << setprecision(2) << "Ð¡ÑƒÐ¼Ð° = " << totalCost << " Ð³Ñ€Ð½" << endl;
 }
