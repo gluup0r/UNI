@@ -1,17 +1,32 @@
 #include <iostream>
-#include <iomanip>
-#include <windows.h>
+#include <Windows.h>
+#include <cmath>
+
 using namespace std;
 
 int main() {
     SetConsoleCP(1251);
     SetConsoleOutputCP(1251);
+    double a, b, c, x, F;
+    cout << "Введіть значення a: ";
+    cin >> a;
+    cout << "Введіть значення b: ";
+    cin >> b;
+    cout << "Введіть значення c: ";
+    cin >> c;
+    cout << "Введіть значення x: ";
+    cin >> x;
 
-    double m1 = 6;
-    double m2 = 1;
-    double m3 = 8;
+    if (x < 0 && b + 7 != 0 && x != 0) { // ОДЗ: x ? 0
+        F = sqrt(a * x * x) + b / x;
+    }
+    else if ((17 - x > b) || a == 0 && x + a != 0) { // ОДЗ: x ? -a
+        F = abs(x - a) / (x + a);
+    }
+    else if (c != 0 && x >= 0) { // ОДЗ: c ? 0 і x ? 0
+        F = sqrt(x) / c;
+    }
 
-    double totalCost = m1 * 45.5 + m2 * 17.40 + m3 * 31.5;
-
-    cout << fixed << setprecision(2) << "Сума = " << totalCost << " грн" << endl;
+    cout << "Значення F: " << F << endl;
 }
+
