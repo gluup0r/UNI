@@ -17,16 +17,5 @@ int main() {
     cout << "Ââåä³òü çíà÷åííÿ x: ";
     cin >> x;
 
-    if (x < 0 && b + 7 != 0 && x != 0) { // ÎÄÇ: x ? 0
-        F = sqrt(a * x * x) + b / x;
-    }
-    else if ((17 - x > b) || a == 0 && x + a != 0) { // ÎÄÇ: x ? -a
-        F = abs(x - a) / (x + a);
-    }
-    else if (c != 0 && x >= 0) { // ÎÄÇ: c ? 0 ³ x ? 0
-        F = sqrt(x) / c;
-    }
-
-    cout << "Çíà÷åííÿ F: " << F << endl;
 }
 
